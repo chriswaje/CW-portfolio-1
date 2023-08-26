@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* styling for body */
+body {
+    background-color: #555555;
+}
+
+/* styling for header  */
+.header {
+    padding: 30px;
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #885cce;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.header h1 {
+    background-color: #555555;
+    color: #e2e2e2;
+    font-size: 40px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
