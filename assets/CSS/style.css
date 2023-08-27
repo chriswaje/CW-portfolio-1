@@ -2,34 +2,91 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: monospace;
+    color:#e2e2e2
 }
 
 /* styling for body */
 body {
-    background-color: #555555;
+    background-color: #000000;
 }
 
 /* styling for header  */
 .header {
-    padding: 30px;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family:monospace;
     background-color: #885cce;
+    padding: 40px 0px 0px 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-content: end
 }
 
 .header h1 {
-    background-color: #555555;
+    border-top-right-radius: 10px;
+    background-color: #000000;
     color: #e2e2e2;
-    font-size: 40px;
-    padding: 10px;
-    margin: 10px;
+    font-size: 50px;
+    margin: 20px 0px px 0px;
+    padding: 5px
+}
+
+.cat {
+    height: 65px;
+    width: 65px;
 }
 
 .header nav {
+    font-size: 20px;
+    width: 400px; 
+    padding: 5px 0px 0px 0px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: row wrap;
     justify-content: space-between;
+    align-items: end;
 }
 
+#about, #work, #contact {
+    color:#e2e2e2;
+    background-color: #000000;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+figure {
+    background-image: url("../images/wave.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+figure p {
+    font-family: monospace;
+    font-size: 30px;
+    color:#e2e2e2;
+    background-color:black;
+    padding: 5px;
+    border: 5px;
+    align-self: end;
+}
+
+.about-me {
+    margin: 20px 50px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.about-me h2{
+    border:red dashed;
+    float: left;
+}
+
+.about-me p{
+    border: blue dashed;
+    float: right;
+}
