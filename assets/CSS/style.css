@@ -22,6 +22,7 @@ body {
     align-content: end
 }
 
+/* styling for h1 (name) */
 .header h1 {
     border-top-right-radius: 10px;
     background-color: #000000;
@@ -31,21 +32,24 @@ body {
     padding: 5px
 }
 
+/* styling for profile image */
 .cat {
     height: 65px;
     width: 65px;
 }
 
+/* styling for navigation links */
 .header nav {
     font-size: 20px;
-    width: 400px; 
     padding: 5px 0px 0px 0px;
     display: flex;
-    flex-wrap: row wrap;
+    flex-wrap: column wrap; 
     justify-content: space-between;
     align-items: end;
+    flex-basis: 20%;
 }
 
+/* styling for navigation buttons */
 #about, #work, #contact {
     color:#e2e2e2;
     background-color: #000000;
@@ -54,39 +58,137 @@ body {
     border-top-right-radius: 10px;
 }
 
+/* styling for subheader image */
 figure {
     background-image: url("../images/wave.jpg");
     background-size: cover;
     background-position: center;
     height: 200px;
-    width: 100%;
     display: flex;
+    flex-basis: 100%;
     justify-content: end;
 }
 
+/* styling for subhheader subtitle */
 figure p {
-    font-family: monospace;
     font-size: 30px;
-    color:#e2e2e2;
     background-color:black;
     padding: 5px;
     border: 5px;
     align-self: end;
 }
 
+/* styling for about for me article */
 .about-me {
-    margin: 20px 50px;
+    margin: 30px 0px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+}
+
+.line {
+    background-color:#e2e2e2;
+    padding: 5px 2px;
+}
+
+.about-me h2 {
+    margin: 0px 20px 0px 0px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    flex-basis: 10%;
+}
+
+.about-me p {
+    margin: 0px 0px 0px 100px;
+    font-size: 20px;
     display: flex;
     flex-wrap: wrap;
-
+    flex-basis: 70%;
+    padding: 5px 5px
 }
 
-.about-me h2{
-    border:red dashed;
-    float: left;
+/* styling for work article */
+.work {
+    margin: 30px 0px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
-.about-me p{
-    border: blue dashed;
-    float: right;
+.work h2 {
+    margin: 0px 20px 0px 0px;
+    font-size: 40px;
+    display: flex;
+    flex-basis: 10%;
+    justify-content: end;
 }
+
+.images {
+    margin: 0px 0px 0px 100px;
+    height: 750px;
+    width: 70%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.images a p {
+    font-size: 30px;
+    background-color: black;
+    padding: 5px;
+    align-self: end;
+}
+
+#horiseon {
+    margin: 5px;
+    background-image: url("../images/horiseon.jpg.jpg");
+    background-size: cover;
+    background-position:center;
+    height: 250px;
+    display: flex;
+    flex-basis: 90%;
+}
+
+#img1 {
+    margin: 5px;
+    background-image: url("../images/calculator.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    display: flex;
+    flex-basis: 45%;
+}
+
+#img2 {
+    margin: 5px;
+    background-image: url("../images/url-shortener.png");
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    display: flex;
+    flex-basis: 45%;
+}
+
+#img3 {
+    margin: 5px;
+    background-image: url("../images/SpeedTest.png");
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    display: flex;
+    flex-basis: 45%;
+}
+
+#img4 {
+    margin: 5px;
+    background-image: url("../images/timer.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    display: flex;
+    flex-basis: 45%;
+}
+
