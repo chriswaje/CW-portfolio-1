@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     font-family: monospace;
-    color:#e2e2e2
+    color: #e2e2e2
 }
 
 /* styling for body */
@@ -13,7 +13,7 @@ body {
 
 /* styling for header  */
 .header {
-    font-family:monospace;
+    font-family: monospace;
     background-color: #885cce;
     padding: 40px 0px 0px 0px;
     display: flex;
@@ -43,7 +43,7 @@ body {
     font-size: 20px;
     padding: 5px 0px 0px 0px;
     display: flex;
-    flex-wrap: column wrap; 
+    flex-wrap: row wrap;
     justify-content: space-between;
     align-items: end;
     flex-basis: 20%;
@@ -51,7 +51,6 @@ body {
 
 /* styling for navigation buttons */
 #about, #work, #contact {
-    color:#e2e2e2;
     background-color: #000000;
     padding: 10px;
     border-top-left-radius: 10px;
@@ -72,7 +71,7 @@ figure {
 /* styling for subhheader subtitle */
 figure p {
     font-size: 30px;
-    background-color:black;
+    background-color: black;
     padding: 5px;
     border: 5px;
     align-self: end;
@@ -88,7 +87,7 @@ figure p {
 }
 
 .line {
-    background-color:#e2e2e2;
+    background-color: #e2e2e2;
     padding: 5px 2px;
 }
 
@@ -146,49 +145,91 @@ figure p {
     margin: 5px;
     background-image: url("../images/horiseon.jpg.jpg");
     background-size: cover;
-    background-position:center;
+    background-position: center;
+    transition: 0.5s;
     height: 250px;
     display: flex;
     flex-basis: 90%;
 }
 
-#img1 {
+#calculator {
     margin: 5px;
     background-image: url("../images/calculator.jpg");
     background-size: cover;
     background-position: center;
+    transition: 0.5s;
     height: 200px;
     display: flex;
     flex-basis: 45%;
 }
 
-#img2 {
+#url-shortener {
     margin: 5px;
     background-image: url("../images/url-shortener.png");
     background-size: cover;
     background-position: center;
+    transition: 0.5s;
     height: 200px;
     display: flex;
     flex-basis: 45%;
 }
 
-#img3 {
+#speed-test {
     margin: 5px;
     background-image: url("../images/SpeedTest.png");
     background-size: cover;
     background-position: center;
+    transition: 0.5s;
     height: 200px;
     display: flex;
     flex-basis: 45%;
 }
 
-#img4 {
+#timer {
     margin: 5px;
     background-image: url("../images/timer.jpg");
     background-size: cover;
     background-position: center;
+    transition: 0.5s;
     height: 200px;
     display: flex;
     flex-basis: 45%;
 }
 
+#horiseon:hover, #calculator:hover, #url-shortener:hover,
+ #speed-test:hover, #timer:hover {
+    box-shadow: 0 0 200px #885cce;
+}
+
+/* styling for contact me article */
+footer {
+    margin: 30px 0px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+footer h2 {
+    margin: 0px 20px 0px 0px;
+    font-size: 40px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: start;
+    flex-basis: 12%;
+}
+
+.line {
+    background-color: #e2e2e2;
+    padding: 5px 2px;
+}
+
+.contacts {
+    font-size: 25px;
+    margin: 0px 0px 0px 40px;
+    display: flex;
+    flex-flow: row wrap;
+    flex-basis: 75%;
+    justify-content: space-around;
+    align-items: center
+}
