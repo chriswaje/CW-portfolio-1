@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    color: #e2e2e2e2;
+}
+
+:root {
+    --primary-background: #000000;
+    --secondary-background: #885cce;
+    --text-padding: 10px;
+    --h2-width: 250px;
+    --h2-padding: 0px 25px 0px 0px;
+    --h2-font: 40px;
+    --h2-border: solid #e2e2e2;
+    --border-radius: 10px;
+    --article-margins: 30px 0px;
+    --article-paddings: 0px 50px;
+    --img-margins: 5px;
+    --img-heights: 200px;
+    --img-basis: 650px;
+}
+
+/* styling for body */
+body {
+    background-color: var(--primary-background);
+}
+
+/* styling for header */
+header {
+    background-color: var(--secondary-background);
+    padding: 40px 0px 0px 0px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: end;
+}
+
+header h1 {
+    background-color: var(--primary-background);
+    font-size: 50px;
+    margin: 20px 0 0 0;
+    padding: var(--text-padding);
+    border-top-right-radius: var(--border-radius);
+}
+
+.cat {
+    height: 65px;
+    width:65px;
+}
+
+/* styling for navigation links in header */
+header nav {
+    display: flex;
+    flex-basis: 480px;
+    justify-content: space-between;
+    align-items: end;
+}
+
+#about, #work, #contact {
+    background-color: var(--primary-background);
+    font-size: 25px;
+    padding: var(--text-padding);
+    margin: 0px 5px;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+
+/* styling for subheader */
+figure {
+    background-image: url("../images/waves.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    display: flex;
+    justify-content: end;
+}
+
+figure p {
+    font-size: 40px;
+    background-color: var(--primary-background);
+    align-self: end;
+    padding: var(--text-padding);
+    border-top-left-radius: var(--border-radius);
+}
+
+/* styling for about me article */
+.about-me {
+    margin: var(--article-margins);
+    padding: var(--article-paddings);
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-me h2 {
+    border-right: var(--h2-border); 
+    font-size: var(--h2-font);
+    display: flex;
+    justify-content: right;
+    padding: var(--h2-padding);
+    width: var(--h2-width);
+}
+
+.about-me p {
+    font-size: 20px;
+    margin: 0px 0px 0px 50px;
+    line-height: 150%;
+    width: 1500px;
+}
+
+/* styling for work article */
+.work {
+    margin: var(--article-margins);
+    padding: var(--article-paddings);
+    display: flex;
+    justify-content: space-between;
+}
+
+.work h2 {
+    border-right: var(--h2-border);
+    font-size: var(--h2-font);
+    display: flex;
+    justify-content: right;
+    padding: var(--h2-padding);
+    width: var(--h2-width);
+}
+
+.images {
+    margin: 0px 0px 0px 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    width: 1500px;
+}
+
+#horiseon {
+    margin: var(--img-margins);
+    background-image: url("../images/horiseon.jpg.jpg");
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s;
+    height: var(--img-heights);
+    display: flex;
+    flex-basis: 1310px;
+} 
+
+#calculator {
+    margin: var(--img-margins);
+    background-image: url("../images/calculator.jpg");
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s;
+    height: var(--img-heights);
+    display: flex;
+    flex-basis: var(--img-basis);
+}
+
+#url-shortener {
+    margin: var(--img-margins);
+    background-image: url("../images/url-shortener.png");
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s;
+    height: var(--img-heights);
+    display: flex;
+    flex-basis: var(--img-basis);
+}
+
+#speed-test {
+    margin: var(--img-margins);
+    background-image: url("../images/SpeedTest.png");
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s;
+    height: var(--img-heights);
+    flex-basis: var(--img-basis);
+    display: flex;
+}
+
+#timer {
+    margin: var(--img-margins);
+    background-image: url("../images/timer.jpg");
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s;
+    height: var(--img-heights);
+    flex-basis: var(--img-basis);
+    display: flex;
+}
+
+.images a p {
+    font-size: 30px;
+    border-top-right-radius: var(--border-radius);
+    background-color: var(--primary-background);
+    padding: var(--text-padding);
+    align-self: end;
+}
+
+/* styling for hover glow */
+#horiseon:hover, #calculator:hover, #url-shortener:hover,
+ #speed-test:hover, #timer:hover{
+    box-shadow: 0 0 200px var(--secondary-background);
+ }
+
+/* styling for footer */
+footer {
+    margin: var(--article-margins);
+    padding: var(--article-paddings);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+footer h2 {
+    border-right: var(--h2-border);
+    font-size: var(--h2-font);
+    padding: var(--h2-padding);
+    display: flex;
+    justify-content: right;
+    width: var(--h2-width);
+}
+
+footer nav {
+    font-size: 25px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1500px;
+}
+
+#email, #phone, #resume {
+    background-color:var(--secondary-background);
+    padding: 15px 20px;
+    border-radius: var(--border-radius);
+}
+
+/* media queries for reactive design */
+@media (max-width: 968px) {
+    header {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 968px) {
+    header h1 {
+        border-radius: var(--border-radius);
+    }
+}
+
+@media (max-width: 968px) {
+    header nav {
+        margin: 20px 0px 0px 0px;
+    }
+}
+
+
+@media (max-width: 1764px) {
+    #horiseon {
+        flex-basis: var(--img-basis);
+    }
+}
+
+@media (max-width: 1850px) {
+    footer {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1850px) {
+    footer h2 {
+        border: none;
+        text-decoration: underline;
+        font-size: var(--h2-font);
+        padding: var(--h2-padding);
+        display: flex;
+        justify-content: right;
+        width: var(--h2-width);
+    }
+}
+
+@media (max-width: 1850px) {
+    footer nav {
+        margin: 40px 0px 0px 0px;
+    }
+}
