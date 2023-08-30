@@ -98,7 +98,7 @@ figure p {
     display: flex;
     justify-content: right;
     padding: var(--h2-padding);
-    width: var(--h2-width);
+    flex-basis: var(--h2-width);
 }
 
 .about-me p {
@@ -122,7 +122,7 @@ figure p {
     display: flex;
     justify-content: right;
     padding: var(--h2-padding);
-    width: var(--h2-width);
+    flex-basis: var(--h2-width);
 }
 
 .images {
@@ -131,7 +131,7 @@ figure p {
     flex-flow: row wrap;
     justify-content: center;
     align-content: center;
-    width: 1500px;
+    flex-basis: 1500px;
 }
 
 #horiseon {
@@ -218,7 +218,7 @@ footer h2 {
     padding: var(--h2-padding);
     display: flex;
     justify-content: right;
-    width: var(--h2-width);
+    flex-basis: var(--h2-width);
 }
 
 footer nav {
@@ -227,7 +227,7 @@ footer nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 1500px;
+    flex-basis: 1500px;
 }
 
 #email, #phone, #resume {
@@ -278,7 +278,7 @@ footer nav {
         padding: var(--h2-padding);
         display: flex;
         justify-content: right;
-        width: var(--h2-width);
+        flex-basis: var(--h2-width);
     }
 }
 
