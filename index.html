@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CW Portfoilio 1</title>
     <link rel="stylesheet" href="./assets/CSS/reset.css">
-    <link rel="stylesheet" href="./assets/CSS/style.css">
+    <link rel="stylesheet" href="./assets/CSS/restyle.css">
 </head>
 
 <body>
     <!-- Header and navigation links -->
-    <nav class="header">
+    <header>
         <h1>Christian Waje
             <img src="./assets/images/gojo-cat.jpg" class="cat" alt="cartoon cat wearing sunglasses" />
         </h1>
@@ -20,7 +20,7 @@
             <a href="#work-nav" id="work">Work</a>
             <a href="#contact-nav" id="contact">Contact Me</a>
         </nav>
-    </nav>
+    </header>
 
     <!-- Figure with subtitle section -->
     <figure alt="card deck wave">
@@ -31,21 +31,18 @@
         <!-- About me section -->
         <article class="about-me" id="about-nav">
             <h2>About Me</h2>
-            <div class="line"></div>
             <p>Hello! I'm Chris, a striving full-stack developer currently based in Las Vegas, NV. As a current bootcamp
                 student, I am learning to hone my skills in HTML, CSS, and Javascript
                 to create projects that display my proficiency in full-stack development. I am very passionate about
                 software applications and their utilization in everyday living. Whether it's for
-                pleasure, professional work, or simply for daily efficiency, I enjoy learning more about the development
-                of
-                easily accessible programs.
+                pleasure, professional work, or simply to make daily living easier, I enjoy learning more about the development
+                of easily accessible programs.
             </p>
         </article>
 
         <!-- Displayed work section -->
         <article class="work" id="work-nav">
             <h2>Work</h2>
-            <div class="line"></div>
             <section class="images">
                 <a href="https://chriswaje.github.io/horiseon-HTML-CSS-refactoring/" id="horiseon"
                     alt="team working on project">
@@ -71,12 +68,11 @@
     <!-- Contact me section here -->
     <footer id="contact-nav">
         <h2>Contact Me</h2>
-        <div class="line"></div>
-        <div class="contacts">
-            <a href="mailto: chriswaje@gmail.com">Email</a>
-            <p>323.376.2133</p>
-            <a href="./assets/images/CW resume 2022.pdf">Resume</a>
-        </div>
+        <nav>
+            <a href="mailto: chriswaje@gmail.com" id="email">Email</a>
+            <p id="phone">323.376.2133</p>
+            <a href="./assets/images/CW resume 2022.pdf" id="resume">Resume</a>
+        </nav>
     </footer>
 
 </body>
