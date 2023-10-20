@@ -134,9 +134,9 @@ figure p {
     flex-basis: 1500px;
 }
 
-#horiseon {
+#commerce {
     margin: var(--img-margins);
-    background-image: url("../images/horiseon.jpg.jpg");
+    background-image: url("../images/landing-page.png");
     background-size: cover;
     background-position: center;
     transition: 0.5s;
@@ -156,9 +156,9 @@ figure p {
     flex-basis: var(--img-basis);
 }
 
-#url-shortener {
+#horiseon {
     margin: var(--img-margins);
-    background-image: url("../images/url-shortener.png");
+    background-image: url("../images/horiseon.jpg.jpg");
     background-size: cover;
     background-position: center;
     transition: 0.5s;
@@ -198,7 +198,7 @@ figure p {
 }
 
 /* styling for hover glow */
-#horiseon:hover, #calculator:hover, #url-shortener:hover,
+#commerce:hover, #calculator:hover, #horiseon:hover,
  #speed-test:hover, #timer:hover{
     box-shadow: 0 0 200px var(--secondary-background);
  }
@@ -258,7 +258,7 @@ footer nav {
 
 
 @media (max-width: 1764px) {
-    #horiseon {
+    #commerce {
         flex-basis: var(--img-basis);
     }
 }
